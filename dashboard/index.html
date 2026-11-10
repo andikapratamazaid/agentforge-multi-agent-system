@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentForge Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>AgentForge</h1>
+    <p class="subtitle">Multi-Agent Automation System: jejak run, skor reviewer, dan biaya per run</p>
+  </div>
+  <span id="mode-badge" class="badge">mode: demo</span>
+</header>
+
+<main>
+  <section class="cards" id="summary-cards"></section>
+
+  <section class="layout">
+    <div class="panel">
+      <h2>Daftar Run</h2>
+      <div id="run-list" class="run-list"></div>
+    </div>
+    <div class="panel detail">
+      <h2>Detail Run</h2>
+      <div id="run-detail"><p class="muted">Pilih satu run untuk melihat jejak langkahnya.</p></div>
+    </div>
+  </section>
+
+  <p class="footnote">
+    Data berasal dari file data/runs.json yang dihasilkan skrip seed_demo_runs.py.
+    Sajikan folder ini lewat server statis, contoh: python3 -m http.server di root project,
+    lalu buka dashboard/index.html. Skor dan biaya pada mode demo adalah hasil simulasi
+    deterministik dengan tabel harga indikatif, bukan tagihan API sungguhan.
+  </p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
