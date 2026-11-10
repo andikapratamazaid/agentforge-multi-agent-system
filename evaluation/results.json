@@ -1,0 +1,127 @@
+{
+  "mode": "demo",
+  "task_count": 6,
+  "tasks_passed_all": 6,
+  "criteria_passed": {
+    "plan_valid": 6,
+    "all_steps_completed": 6,
+    "reviewer_passed": 6,
+    "required_elements_complete": 6,
+    "final_output_substantive": 6
+  },
+  "per_workflow": {
+    "konten": {
+      "tasks": 2,
+      "passed_all": 2,
+      "avg_score": 97.5
+    },
+    "laporan_data": {
+      "tasks": 2,
+      "passed_all": 2,
+      "avg_score": 91.0
+    },
+    "triase_support": {
+      "tasks": 2,
+      "passed_all": 2,
+      "avg_score": 91.5
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "konten-01",
+      "workflow": "konten",
+      "reviewer_score": 100,
+      "revision_rounds": 0,
+      "total_tokens": 1031,
+      "total_cost_usd": 0.004319,
+      "criteria": {
+        "plan_valid": true,
+        "all_steps_completed": true,
+        "reviewer_passed": true,
+        "required_elements_complete": true,
+        "final_output_substantive": true
+      },
+      "passed_all": true
+    },
+    {
+      "task_id": "konten-02",
+      "workflow": "konten",
+      "reviewer_score": 95,
+      "revision_rounds": 0,
+      "total_tokens": 774,
+      "total_cost_usd": 0.003116,
+      "criteria": {
+        "plan_valid": true,
+        "all_steps_completed": true,
+        "reviewer_passed": true,
+        "required_elements_complete": true,
+        "final_output_substantive": true
+      },
+      "passed_all": true
+    },
+    {
+      "task_id": "data-01",
+      "workflow": "laporan_data",
+      "reviewer_score": 92,
+      "revision_rounds": 0,
+      "total_tokens": 1987,
+      "total_cost_usd": 0.007083,
+      "criteria": {
+        "plan_valid": true,
+        "all_steps_completed": true,
+        "reviewer_passed": true,
+        "required_elements_complete": true,
+        "final_output_substantive": true
+      },
+      "passed_all": true
+    },
+    {
+      "task_id": "data-02",
+      "workflow": "laporan_data",
+      "reviewer_score": 90,
+      "revision_rounds": 0,
+      "total_tokens": 1775,
+      "total_cost_usd": 0.006277,
+      "criteria": {
+        "plan_valid": true,
+        "all_steps_completed": true,
+        "reviewer_passed": true,
+        "required_elements_complete": true,
+        "final_output_substantive": true
+      },
+      "passed_all": true
+    },
+    {
+      "task_id": "support-01",
+      "workflow": "triase_support",
+      "reviewer_score": 88,
+      "revision_rounds": 0,
+      "total_tokens": 453,
+      "total_cost_usd": 0.001686,
+      "criteria": {
+        "plan_valid": true,
+        "all_steps_completed": true,
+        "reviewer_passed": true,
+        "required_elements_complete": true,
+        "final_output_substantive": true
+      },
+      "passed_all": true
+    },
+    {
+      "task_id": "support-02",
+      "workflow": "triase_support",
+      "reviewer_score": 95,
+      "revision_rounds": 0,
+      "total_tokens": 506,
+      "total_cost_usd": 0.00193,
+      "criteria": {
+        "plan_valid": true,
+        "all_steps_completed": true,
+        "reviewer_passed": true,
+        "required_elements_complete": true,
+        "final_output_substantive": true
+      },
+      "passed_all": true
+    }
+  ]
+}
