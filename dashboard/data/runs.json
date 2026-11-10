@@ -1,0 +1,268 @@
+[
+  {
+    "run_id": "run-5738e231",
+    "workflow": "konten",
+    "workflow_label": "Pipeline Konten",
+    "title": "Manfaat Kasir Digital untuk Warung Makan",
+    "status": "selesai",
+    "mode": "demo",
+    "steps": [
+      {
+        "step_id": "riset",
+        "agent": "research",
+        "action": "structure",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "deterministic-tool",
+        "mode": "tool",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost_usd": 0.0
+      },
+      {
+        "step_id": "draf",
+        "agent": "writer",
+        "action": "draft",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "anthropic/claude-3.5-sonnet",
+        "mode": "demo",
+        "prompt_tokens": 254,
+        "completion_tokens": 209,
+        "cost_usd": 0.003897
+      },
+      {
+        "step_id": "review",
+        "agent": "reviewer",
+        "action": "review",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o",
+        "mode": "demo",
+        "prompt_tokens": 54,
+        "completion_tokens": 11,
+        "cost_usd": 0.000245
+      },
+      {
+        "step_id": "sintesis",
+        "agent": "conductor",
+        "action": "synthesize",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o-mini",
+        "mode": "demo",
+        "prompt_tokens": 278,
+        "completion_tokens": 225,
+        "cost_usd": 0.000177
+      }
+    ],
+    "step_count": 4,
+    "draft": "Artikel ini ditulis untuk pemilik warung makan kecil. Topik utamanya adalah Manfaat Kasir Digital untuk Warung Makan. Brief konten: artikel blog untuk pemilik warung makan dan usaha kuliner kecil di Indonesia tentang manfaat kasir digital. Tujuan artikel adalah menjelaskan bahwa pencatatan penjualan yang rapi membantu pemilik warung membaca menu terlaris dan mengendalikan stok bahan. Target pembaca adalah pemilik warung yang selama ini mencatat manual di buku tulis. Artikel wajib memuat angka contoh: warung dengan 120 transaksi per hari dapat menghemat sekitar 90 menit pencatatan per minggu. Manfaat utama yang harus dibahas adalah laporan penjualan harian otomatis, riwayat harga bahan, dan peringatan stok menipis. Penutup artikel harus mengajak pembaca mencoba pencatatan digital mulai dari satu menu terlaris terlebih dahulu.",
+    "final_output": "Hasil final workflow konten: Artikel ini ditulis untuk pemilik warung makan kecil. Topik utamanya adalah Manfaat Kasir Digital untuk Warung Makan. Brief konten: artikel blog untuk pemilik warung makan dan usaha kuliner kecil di Indonesia tentang manfaat kasir digital. Tujuan artikel adalah menjelaskan bahwa pencatatan penjualan yang rapi membantu pemilik warung membaca menu terlaris dan mengendalikan stok bahan. Target pembaca adalah pemilik warung yang selama ini mencatat manual di buku tulis. Artikel wajib memuat angka contoh: warung dengan 120 transaksi per hari dapat menghemat sekitar 90 menit pencatatan per minggu. Manfaat utama yang harus dibahas adalah laporan penjualan harian otomatis, riwayat harga bahan, dan peringatan stok menipis. Penutup artikel harus mengajak pembaca mencoba pencatatan digital mulai dari satu menu terlaris terlebih dahulu. Skor reviewer akhir: 100 dari 100.",
+    "reviewer_score": 100,
+    "reviewer_passed": true,
+    "reviewer_components": {
+      "kelengkapan": 35.0,
+      "kesesuaian_brief": 25.0,
+      "kejelasan": 20.0,
+      "ketepatan_fakta": 20.0
+    },
+    "revision_rounds": 0,
+    "total_tokens": 1031,
+    "total_cost_usd": 0.004319,
+    "research_points": [
+      "Brief konten: artikel blog untuk pemilik warung makan dan usaha kuliner kecil di Indonesia tentang manfaat kasir digital.",
+      "Tujuan artikel adalah menjelaskan bahwa pencatatan penjualan yang rapi membantu pemilik warung membaca menu terlaris dan mengendalikan stok bahan.",
+      "Target pembaca adalah pemilik warung yang selama ini mencatat manual di buku tulis.",
+      "Artikel wajib memuat angka contoh: warung dengan 120 transaksi per hari dapat menghemat sekitar 90 menit pencatatan per minggu.",
+      "Manfaat utama yang harus dibahas adalah laporan penjualan harian otomatis, riwayat harga bahan, dan peringatan stok menipis.",
+      "Penutup artikel harus mengajak pembaca mencoba pencatatan digital mulai dari satu menu terlaris terlebih dahulu."
+    ]
+  },
+  {
+    "run_id": "run-9d23543f",
+    "workflow": "laporan_data",
+    "workflow_label": "Pipeline Laporan Data",
+    "title": "Laporan Penjualan Mingguan",
+    "status": "selesai",
+    "mode": "demo",
+    "steps": [
+      {
+        "step_id": "analisis",
+        "agent": "data",
+        "action": "analyze",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o-mini",
+        "mode": "demo",
+        "prompt_tokens": 197,
+        "completion_tokens": 194,
+        "cost_usd": 0.000146
+      },
+      {
+        "step_id": "draf",
+        "agent": "writer",
+        "action": "draft",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "anthropic/claude-3.5-sonnet",
+        "mode": "demo",
+        "prompt_tokens": 402,
+        "completion_tokens": 347,
+        "cost_usd": 0.006411
+      },
+      {
+        "step_id": "review",
+        "agent": "reviewer",
+        "action": "review",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o",
+        "mode": "demo",
+        "prompt_tokens": 54,
+        "completion_tokens": 11,
+        "cost_usd": 0.000245
+      },
+      {
+        "step_id": "sintesis",
+        "agent": "conductor",
+        "action": "synthesize",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o-mini",
+        "mode": "demo",
+        "prompt_tokens": 418,
+        "completion_tokens": 364,
+        "cost_usd": 0.000281
+      }
+    ],
+    "step_count": 4,
+    "draft": "Laporan: Laporan Penjualan Mingguan. Dataset berisi 18 baris dan 4 kolom (minggu, produk, unit_terjual, pendapatan). Kolom minggu: total 63.0, rata-rata 3.5, nilai tengah 3.5, rentang 1.0 sampai 6.0. Kolom unit_terjual: total 7696.0, rata-rata 427.56, nilai tengah 425.0, rentang 355.0 sampai 502.0. Kolom pendapatan: total 36109000.0, rata-rata 2006055.56, nilai tengah 2080000.0, rentang 1420000.0 sampai 2510000.0. Tren kolom pendapatan: rata-rata paruh kedua naik 12.4 persen dibanding paruh pertama. Berdasarkan kolom produk, penyumbang terbesar adalah Soto Kecil dengan total pendapatan sebesar 13795000.0. Berdasarkan data pada Laporan Penjualan Mingguan, temuan utamanya adalah sebagai berikut. Dataset berisi 18 baris dan 4 kolom (minggu, produk, unit_terjual, pendapatan). Kolom minggu: total 63.0, rata-rata 3.5, nilai tengah 3.5, rentang 1.0 sampai 6.0. Kolom unit_terjual: total 7696.0, rata-rata 427.56, nilai tengah 425.0, rentang 355.0 sampai 502.0. Kolom pendapatan: total 36109000.0, rata-rata 2006055.56, nilai tengah 2080000.0, rentang 1420000.0 sampai 2510000.0. Tren kolom pendapatan: rata-rata paruh kedua naik 12.4 persen dibanding paruh pertama. Berdasarkan kolom produk, penyumbang terbesar adalah Soto Kecil dengan total pendapatan sebesar 13795000.0. Pola ini layak diperhatikan karena muncul konsisten di keseluruhan periode data, bukan hanya pada satu titik.",
+    "final_output": "Hasil final workflow laporan_data: Laporan: Laporan Penjualan Mingguan. Dataset berisi 18 baris dan 4 kolom (minggu, produk, unit_terjual, pendapatan). Kolom minggu: total 63.0, rata-rata 3.5, nilai tengah 3.5, rentang 1.0 sampai 6.0. Kolom unit_terjual: total 7696.0, rata-rata 427.56, nilai tengah 425.0, rentang 355.0 sampai 502.0. Kolom pendapatan: total 36109000.0, rata-rata 2006055.56, nilai tengah 2080000.0, rentang 1420000.0 sampai 2510000.0. Tren kolom pendapatan: rata-rata paruh kedua naik 12.4 persen dibanding paruh pertama. Berdasarkan kolom produk, penyumbang terbesar adalah Soto Kecil dengan total pendapatan sebesar 13795000.0. Berdasarkan data pada Laporan Penjualan Mingguan, temuan utamanya adalah sebagai berikut. Dataset berisi 18 baris dan 4 kolom (minggu, produk, unit_terjual, pendapatan). Kolom minggu: total 63.0, rata-rata 3.5, nilai tengah 3.5, rentang 1.0 sampai 6.0. Kolom unit_terjual: total 7696.0, rata-rata 427.56, nilai tengah 425.0, rentang 355.0 sampai 502.0. Kolom pendapatan: total 36109000.0, rata-rata 2006055.56, nilai tengah 2080000.0, rentang 1420000.0 sampai 2510000.0. Tren kolom pendapatan: rata-rata paruh kedua naik 12.4 persen dibanding paruh pertama. Berdasarkan kolom produk, penyumbang terbesar adalah Soto Kecil dengan total pendapatan sebesar 13795000.0. Pola ini layak diperhatikan karena muncul konsisten di keseluruhan periode data, bukan hanya pada satu titik. Skor reviewer akhir: 92 dari 100.",
+    "reviewer_score": 92,
+    "reviewer_passed": true,
+    "reviewer_components": {
+      "kelengkapan": 35.0,
+      "kesesuaian_brief": 16.7,
+      "kejelasan": 20.0,
+      "ketepatan_fakta": 20.0
+    },
+    "revision_rounds": 0,
+    "total_tokens": 1987,
+    "total_cost_usd": 0.007083,
+    "analysis_facts": [
+      "Dataset berisi 18 baris dan 4 kolom (minggu, produk, unit_terjual, pendapatan).",
+      "Kolom minggu: total 63.0, rata-rata 3.5, nilai tengah 3.5, rentang 1.0 sampai 6.0.",
+      "Kolom unit_terjual: total 7696.0, rata-rata 427.56, nilai tengah 425.0, rentang 355.0 sampai 502.0.",
+      "Kolom pendapatan: total 36109000.0, rata-rata 2006055.56, nilai tengah 2080000.0, rentang 1420000.0 sampai 2510000.0.",
+      "Tren kolom pendapatan: rata-rata paruh kedua naik 12.4 persen dibanding paruh pertama.",
+      "Berdasarkan kolom produk, penyumbang terbesar adalah Soto Kecil dengan total pendapatan sebesar 13795000.0."
+    ]
+  },
+  {
+    "run_id": "run-8cf72593",
+    "workflow": "triase_support",
+    "workflow_label": "Pipeline Triase Support",
+    "title": "Tiket Tagihan Ganda",
+    "status": "selesai",
+    "mode": "demo",
+    "steps": [
+      {
+        "step_id": "klasifikasi",
+        "agent": "research",
+        "action": "classify",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "deterministic-tool",
+        "mode": "tool",
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cost_usd": 0.0
+      },
+      {
+        "step_id": "draf",
+        "agent": "writer",
+        "action": "draft",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "anthropic/claude-3.5-sonnet",
+        "mode": "demo",
+        "prompt_tokens": 69,
+        "completion_tokens": 77,
+        "cost_usd": 0.001362
+      },
+      {
+        "step_id": "review",
+        "agent": "reviewer",
+        "action": "review",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o",
+        "mode": "demo",
+        "prompt_tokens": 54,
+        "completion_tokens": 11,
+        "cost_usd": 0.000245
+      },
+      {
+        "step_id": "sintesis",
+        "agent": "conductor",
+        "action": "synthesize",
+        "status": "selesai",
+        "attempts": 1,
+        "duration_ms": 0,
+        "model": "openai/gpt-4o-mini",
+        "mode": "demo",
+        "prompt_tokens": 148,
+        "completion_tokens": 94,
+        "cost_usd": 7.9e-05
+      }
+    ],
+    "step_count": 4,
+    "draft": "Halo, terima kasih sudah menghubungi kami. Kami mencatat laporan Anda terkait Saya pelanggan dengan nomor akun 88213. (kategori: tagihan, prioritas: tinggi). Tim kami sedang memeriksa laporan ini dan akan memberikan kabar lanjutan paling lambat satu hari kerja. Mohon maaf atas ketidaknyamanan yang terjadi.",
+    "final_output": "Hasil final workflow triase_support: Halo, terima kasih sudah menghubungi kami. Kami mencatat laporan Anda terkait Saya pelanggan dengan nomor akun 88213. (kategori: tagihan, prioritas: tinggi). Tim kami sedang memeriksa laporan ini dan akan memberikan kabar lanjutan paling lambat satu hari kerja. Mohon maaf atas ketidaknyamanan yang terjadi. Skor reviewer akhir: 88 dari 100.",
+    "reviewer_score": 88,
+    "reviewer_passed": true,
+    "reviewer_components": {
+      "kelengkapan": 35.0,
+      "kesesuaian_brief": 12.5,
+      "kejelasan": 20.0,
+      "ketepatan_fakta": 20.0
+    },
+    "revision_rounds": 0,
+    "total_tokens": 453,
+    "total_cost_usd": 0.001686,
+    "classification": {
+      "category": "tagihan",
+      "priority": "tinggi",
+      "scores": {
+        "tagihan": 3,
+        "teknis": 0,
+        "pengiriman": 0,
+        "akun": 1,
+        "produk": 0
+      },
+      "customer_point": "Saya pelanggan dengan nomor akun 88213.",
+      "keywords": [
+        "tagihan",
+        "potongan",
+        "halo",
+        "pelanggan",
+        "nomor",
+        "akun",
+        "bulan",
+        "terpotong"
+      ]
+    }
+  }
+]
