@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.db
+# Database seed demo memang disertakan sebagai contoh hasil seed.
+!db/agentforge.db
+.ipynb_checkpoints/
+.DS_Store

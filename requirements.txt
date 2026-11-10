@@ -1,0 +1,7 @@
+# AgentForge sengaja dibangun hanya dengan Python standard library
+# (urllib, csv, sqlite3, json, unittest) agar dapat dijalankan di
+# mana saja tanpa instalasi paket tambahan.
+# File ini dipertahankan agar alur kerja standar tetap tersedia bila
+# nanti ada dependensi opsional, contoh:
+# requests>=2.32   # alternatif klien HTTP untuk router
+# pytest>=8.0      # alternatif runner tes selain unittest
